@@ -51,8 +51,8 @@ exports.withdrawFunds = async (req, res) => {
     }
 
     // 💰 Withdrawal rules
-    let kesAmount = 11800;
-    if (usdAmount >= 7000) kesAmount = 15000;
+    let kesAmount = 4430;
+    if (usdAmount >= 7000) kesAmount = 6000;
 
     // Create payment record (DO NOT deduct yet)
     const payment = await Payment.create({
